@@ -1,2 +1,2 @@
 # Practicing-CSS
-This repository includes the codes I've written while learning CSS
+This file contains the practice code written while practicing flexbox
