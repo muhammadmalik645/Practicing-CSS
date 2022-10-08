@@ -141,29 +141,72 @@ html {
 
 body {
     background-color: rgba(101, 221, 230, 0.459);
+    text-transform: uppercase;
+
 }
 
 .panel {
+    width: 100%;
+    max-width: 960px;
+    height: 100%;
+    min-height: 100vh;
 
     display: flex;
-    width: 80%;
-    height: 80%;
+    flex-direction: column;
+
     margin: 10% auto;
     background-color: whitesmoke;
-    align-content: center;
-    flex-direction: row;
-    justify-content: center;
+    padding: 10px;
     border-radius: 1em;
-    background-size: contain;
 }
 
-img {
-    object-fit: contain;
-}
 
 .pricing-plan {
-    width: 33%;
-    height: 33%;
-    padding: 2% 4%;
+    max-width: 100%;
+    max-height: 100%;
+    text-align: center;
+    padding: 25px 50px;
+    border-bottom: 2px solid #e1f1ff;
+    margin: 20px;
+    flex-basis: 300px;
 
+}
+
+.pricing-plan h2,
+li,
+a {
+    border-bottom: 2px solid #e1f1ff;
+    padding: 15px 0px;
+    color: #016ff9;
+
+}
+
+.pricing-plan h2 {
+    color: #888888;
+}
+
+.pricing-price {
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
+    color: #016ff9;
+    margin: 10px;
+
+}
+
+a {
+    display: block;
+    border: 2px solid #9dd1ff;
+    border-radius: 10px;
+    padding: 15px 35px;
+    max-width: 100px;
+    text-decoration: none;
+    margin: auto;
+}
+
+.pricing-img {
+    margin-bottom: 25px;
+    width: 100%;
+    max-width: 200px;
+    max-height: 300px;
 }
