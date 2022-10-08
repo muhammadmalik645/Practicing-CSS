@@ -142,6 +142,7 @@ html {
 body {
     background-color: rgba(101, 221, 230, 0.459);
     text-transform: uppercase;
+    font-size: 12px;
 
 }
 
@@ -153,7 +154,7 @@ body {
 
     display: flex;
     flex-direction: column;
-
+    align-items: center;
     margin: 10% auto;
     background-color: whitesmoke;
     padding: 10px;
@@ -166,7 +167,7 @@ body {
     max-height: 100%;
     text-align: center;
     padding: 25px 50px;
-    border-bottom: 2px solid #e1f1ff;
+    /* border-bottom: 2px solid #e1f1ff; */
     margin: 20px;
     flex-basis: 300px;
 
@@ -176,6 +177,7 @@ body {
 li,
 a {
     border-bottom: 2px solid #e1f1ff;
+
     padding: 15px 0px;
     color: #016ff9;
 
@@ -183,6 +185,10 @@ a {
 
 .pricing-plan h2 {
     color: #888888;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 0;
+    margin: 0;
 }
 
 .pricing-price {
@@ -190,7 +196,7 @@ a {
     font-size: 32px;
     font-weight: 700;
     color: #016ff9;
-    margin: 10px;
+    margin-top: 25px;
 
 }
 
@@ -201,12 +207,34 @@ a {
     padding: 15px 35px;
     max-width: 100px;
     text-decoration: none;
-    margin: auto;
+    margin: 25px 0px;
+    font-size: 16px;
 }
 
 .pricing-img {
     margin-bottom: 25px;
     width: 100%;
-    max-width: 200px;
-    max-height: 300px;
+
+}
+
+@media (min-width: 700px) {
+    .panel {
+        flex-direction: row;
+        min-height: 570px;
+    }
+
+
+}
+
+.pricing-plan:nth-of-type(2) a {
+    background-color: #016ff9;
+    color: white;
+}
+
+.pricing-button:hover {
+    background-color: #e1f1ff;
+}
+
+.pricing-plan:nth-of-type(2) a:hover {
+    background-color: #269aff;
 }
