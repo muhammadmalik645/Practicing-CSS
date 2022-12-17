@@ -243,3 +243,7 @@ a {
 .pricing-plan:nth-of-type(2) a:hover {
     background-color: #269aff;
 }
+
+.pricing-plan h2 {
+    padding-bottom: 20px;
+}
